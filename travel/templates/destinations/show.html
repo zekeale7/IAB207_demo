@@ -50,7 +50,7 @@
       
       {% for comment in destination.comments %}
       <div class="col-md-12">  
-        <b>{{ comment.user.name }} <span class="ml-2 text-muted">January 2024</span></b>
+        <b>{{ comment.user.name }} <span class="ml-2 text-muted">- {{ comment.date_posted.strftime("%d/%m/%Y, %H:%M") }}</span></b>
         <p>{{ comment.text }}</p>  
       </div> 
       {% endfor %} 
